@@ -1,13 +1,23 @@
 // import logo from './logo.svg';
-import '../App.css';
-import BotCollection from './BotCollection';
+import React, { useState } from "react";
+// import "../App.css";
+import BotCollection from "./BotCollection";
+import YourBotArmy from "./YourBotArmy";
 
 function App() {
+  const [botArmy, setBotArmy] = useState([]);
+  const addBotToArmy = (bot) => {
+    if (!botArmy.find((bots) => bots.id === bot.id)) {
+      setBotArmy([...botArmy, bot]);
+    }
+  };
   return (
-   
     <>
-    <h1 className='text-2xl text-yellow-300'>Bot Battlr</h1>
-    <BotCollection/>
+      <div className="bg-blue-400">
+        <h1 className="font-extrabold text-5xl text-red-900 text-center">Bot Battlr</h1>
+      </div>
+      <YourBotArmy botArmy={botArmy} />
+      <BotCollection addBotToArmy={addBotToArmy} />
     </>
   );
 }

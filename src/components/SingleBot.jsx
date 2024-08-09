@@ -1,10 +1,13 @@
 import React from "react";
 
-function SingleBot({ bot }) {
+function SingleBot({ bot, addBotToArmy }) {
   return (
-    <div key={bot.id} className="border p-4 rounded-lg shadow-md hover:bg-gray-100 ">
+    <div
+      key={bot.id}
+      className="border p-4 rounded-lg shadow-md hover:bg-gray-100 "
+    >
       <div>
-        <h1> Name  : {bot.name}</h1>
+        <h1> Name : {bot.name}</h1>
       </div>
       <div>
         <span>Health : {bot.health}</span>
@@ -19,7 +22,11 @@ function SingleBot({ bot }) {
         <p>Class : {bot.bot_class}</p>
       </div>
       <div>
-        <p> Phrase : <br></br>{bot.catchphrase}</p>
+        <p>
+          {" "}
+          Phrase : <br></br>
+          {bot.catchphrase}
+        </p>
       </div>
       <div>
         <img src={bot.avatar_url} alt="Bot"></img>
@@ -30,12 +37,15 @@ function SingleBot({ bot }) {
       <div>
         <p>{bot.updated_at}</p>
       </div>
-      <div>
-        <button className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
+      <div className="p-5 ">
+        <button
+          className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+          onClick={() => addBotToArmy(bot)}
+        >
           Add to your Army
         </button>
-        <button className="bg-red-500 text-white font-bold ">
-          Delete
+        <button className="p-4 bg-red-500 text-white font-bold animate-pulse ">
+          X
         </button>
       </div>
     </div>
