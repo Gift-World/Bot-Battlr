@@ -4,7 +4,7 @@ function SingleBot({ bot, addBotToArmy }) {
   return (
     <div
       key={bot.id}
-      className="border p-4 rounded-lg shadow-md hover:bg-gray-100 "
+      className="border p-4 rounded-lg shadow-md bg-blue-500 "
     >
       <div>
         <h1> Name : {bot.name}</h1>
