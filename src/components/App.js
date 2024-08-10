@@ -13,7 +13,7 @@ function App() {
   };
   return (
     <>
-      <div className="bg-blue-400">
+      <div className="bg-blue-700">
         <h1 className="font-extrabold text-5xl text-red-900 text-center">Bot Battlr</h1>
       </div>
       <YourBotArmy botArmy={botArmy} />

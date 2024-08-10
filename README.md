@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# BOT BATTLR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
-## Available Scripts
+### Description
 
-In the project directory, you can run:
+- This application enables users to add bots to the application.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Users are able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Add Bots to the Your bot army component.
+2. Delete Bots from the bot collection.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. A reliable laptop or computer with at least 8GB RAM , core i5, 500GB HDD and stable internet access.
+2. A web browser capable of running JavaScript such as _Chrome_.
+3. An Operating System preferably Linux or Windows 10+.
+4. A text editor capable of running JavaScript such as Visual Studio Code or Sublime Text.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To use this repo, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Alternative One
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  Open the terminal/CLI on your computer.
 
-### `npm run eject`
+2.  Clone the repository by running the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+            git@github.com:Gift-World/Bot-Battlr.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3.  Change directory to the repo folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        cd Bot-Battlr
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4.  Open it in your Text Editor by running the command:
 
-## Learn More
+        code .
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Alternative Two
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- On the top right corner of this page there is a button labelled Fork.
 
-### Code Splitting
+- Click on Fork to create a copy of the repository to your github account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Follow the process described in Alternative One above.
 
-### Analyzing the Bundle Size
+### Running the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. On Vs Code terminal, run `npm install`
 
-### Making a Progressive Web App
+2. Run the command `npm start` to start the server on your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- This runs the app in the development mode.\
+  Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Advanced Configuration
+- The page will reload when you make changes.\
+  You may also see any lint errors in the console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Run `npm test`
 
-### Deployment
+- This Launches the test runner in the interactive watch mode.\
+  See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  ## Live Link
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Charles Gift

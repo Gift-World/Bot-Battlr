@@ -2,7 +2,7 @@ import React from "react";
 
 function SingleBot({ bot, addBotToArmy, handleOnDelete }) {
   return (
-    <div key={bot.id} className="border p-4 rounded-lg shadow-md bg-blue-500 ">
+    <div key={bot.id} className="border p-4 rounded-lg shadow-md bg-blue-900 ">
       <div>
         <h1> Name : {bot.name}</h1>
       </div>
@@ -36,7 +36,7 @@ function SingleBot({ bot, addBotToArmy, handleOnDelete }) {
       </div>
       <div className="p-5 ">
         <button
-          className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 bg-yellow-900 text-white font-bold py-2 px-4 rounded"
           onClick={() => addBotToArmy(bot)}
         >
           Add to your Army

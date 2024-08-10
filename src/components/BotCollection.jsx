@@ -18,22 +18,26 @@ function BotCollection({ addBotToArmy }) {
         Accept: "application/json",
       },
     })
-    .then(res=>res.json())
-      .then((setBotList) => {
-        
-          setBotList((lastBotList) =>
-            lastBotList.filter((bot) => bot.id !== id)
+      .then((res) => {
+        if (res.ok) {
+          setBotList((prevBotList) =>
+            prevBotList.filter((bot) => bot.id !== id)
           );
         }
-      )
+      })
       .catch((error) => console.log(error));
   };
+  
   return (
     <div>
       <h1>Bot Collection</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {BotList.map((bot) => (
-          <SingleBot bot={bot} addBotToArmy={addBotToArmy} handleOnDelete={() => handleOnDelete(bot.id)} />
+          <SingleBot
+            bot={bot}
+            addBotToArmy={addBotToArmy}
+            handleOnDelete={() => handleOnDelete(bot.id)}
+          />
         ))}
       </div>
     </div>
