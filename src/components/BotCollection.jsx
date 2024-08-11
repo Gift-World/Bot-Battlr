@@ -18,16 +18,17 @@ function BotCollection({ addBotToArmy }) {
         Accept: "application/json",
       },
     })
-      .then((res) => {
-        if (res.ok) {
-          setBotList((prevBotList) =>
-            prevBotList.filter((bot) => bot.id !== id)
+    .then(res => res.json())
+      .then((data) => {
+        if (data.ok) {
+          setBotList((initialBotList) =>
+            initialBotList.filter((bot) => bot.id !== id)
           );
         }
       })
       .catch((error) => console.log(error));
   };
-  
+
   return (
     <div>
       <h1>Bot Collection</h1>

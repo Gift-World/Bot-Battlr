@@ -1,10 +1,12 @@
-// import React, { useState } from "react";
-import SingleBot from "./SingleBot";
+import React from "react";
 
-function YourBotArmy({ botArmy }) {
+function YourBotArmy({ botArmy, removeBotArmy }) {
   return (
-    <div>
-      <h1 className="text-2xl italic text-red-900 font-semibold text-center animate-bounce">Your Bot Army</h1>
+    <div className="bg-blue-600">
+      
+      <h1 className="text-2xl italic text-red-900 font-semibold text-center animate-bounce">
+        Your Bot Army
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {botArmy.map((bot) => (
           <div
@@ -43,12 +45,14 @@ function YourBotArmy({ botArmy }) {
               <p>{bot.updated_at}</p>
             </div>
             <div>
-              <button className="bg-red-500 text-white font-bold ">
+              <button
+                className="bg-red-500 text-white font-bold "
+                onClick={() => removeBotArmy(bot.id)}
+              >
                 DELETE
               </button>
             </div>
           </div>
-          // <SingleBot key={bot.id} bot={bot} />
         ))}
       </div>
     </div>

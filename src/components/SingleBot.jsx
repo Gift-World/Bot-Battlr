@@ -2,7 +2,10 @@ import React from "react";
 
 function SingleBot({ bot, addBotToArmy, handleOnDelete }) {
   return (
-    <div key={bot.id} className="border p-4 rounded-lg shadow-md bg-blue-900 ">
+    <div
+      key={bot.id}
+      className="border p-4 rounded-lg shadow-md bg-blue-900 px-2.5 "
+    >
       <div>
         <h1> Name : {bot.name}</h1>
       </div>
