@@ -5,13 +5,13 @@ function BotCollection({ addBotToArmy }) {
   const [BotList, setBotList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://bot-battlr-back-end.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBotList(data))
       .catch((error) => console.log(error));
   }, []);
   const handleOnDelete = (id) => {
-    fetch(`http://localhost:3000/bots/${id}`, {
+    fetch(`https://bot-battlr-back-end.vercel.app/bots/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
