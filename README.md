@@ -66,7 +66,7 @@ To use this repo, follow these steps:
   See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
   ## Live Link
-
+     https://bot-battlr-lac-sigma.vercel.app/
 ## Author
 
 - Charles Gift
